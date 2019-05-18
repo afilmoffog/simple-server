@@ -21,10 +21,6 @@ type Sort struct {
 	Uniq  bool  `json:"uniq"`
 }
 
-type Weather struct {
-	Temp float64 `json:"temp"`
-}
-
 func getTime(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var t Time
